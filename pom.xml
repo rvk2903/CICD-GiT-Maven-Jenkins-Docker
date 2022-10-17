@@ -46,15 +46,7 @@
         </configuration>
       </plugin>
              
-             <plugin>
-                      <groupdId>org.apache.maven.plugin</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-                 <forkcount>3</forkcount>
-                 <reuseforks>true</reuseforks>
-                 <argline>-Xmx1024m -xx:MaxPremSize=256m</argline>
-        </configuration>
-      </plugin>
+             
 
 
       <plugin>
