@@ -37,7 +37,7 @@
           <source>1.6</source>
           <target>1.6</target>
         </configuration>
-      </plugin>
+             </plugin>
 
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
@@ -45,6 +45,17 @@
           <autoVersionSubmodules>true</autoVersionSubmodules>
         </configuration>
       </plugin>
+             
+             <plugin>
+                      <groupdId>org.apache.maven.plugin</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+                 <forkcount>3</forkcount>
+                 <reuseforks>true</reuseforks>
+                 <argline>-Xmx1024m -xx:MaxPremSize=256m</argline>
+        </configuration>
+      </plugin>
+
 
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
